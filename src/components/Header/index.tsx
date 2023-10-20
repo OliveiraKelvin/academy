@@ -1,5 +1,5 @@
 import * as C from './style'
-import menu2 from '../assets/menu2.jpg'
+import menu2 from '../../assets/menu2.jpg'
 
 
 export const Header = () => {
@@ -16,7 +16,7 @@ export const Header = () => {
                     <li><a href="">PROFISSIONAIS</a></li>
                 </ul>
                 <img src={menu2} alt="" className='menu'/>
-                <h4>Login | Acessar </h4>  
+                <h4>Login | Acessar</h4>  
             </div>            
             </C.Nav>
         </C.Container>

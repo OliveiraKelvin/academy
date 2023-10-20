@@ -6,6 +6,12 @@ export const Container = styled.div`
         height: 50px;
         width: 100%;
     }
+
+    
+    .body-parts p:hover {
+        color: gray;
+        transition: all ease 0.1;
+    }   
     
     .body-parts p {
         display: inline-block;
@@ -16,15 +22,10 @@ export const Container = styled.div`
         font-size: 18px;
         font-weight: bold;
         cursor: pointer;
-        color: white;
+        color: black;
         border: 1px solid black;
-        background-color: black;
+        background-color: yellow;
         padding: 15px;
-        border-radius: 8px;
+        border-radius: 15px;
     }
-
-    .body-parts p:hover {
-        color: red;
-        transition: all ease 0.4;
-    }   
 `;

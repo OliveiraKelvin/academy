@@ -15,8 +15,9 @@ export const Nav = styled.div`
         cursor: pointer;
         color: white;
     }
+    
     h4:hover {
-        color: red;
+        color: yellow;
     }
 
     .menu {
@@ -26,6 +27,19 @@ export const Nav = styled.div`
         z-index: 999;
         border-radius: 10px;
         margin-top: 8px;
+    }
+
+    
+    .menu-details {
+        position: absolute;
+        z-index: 998;
+        left: 0;
+        top: 0;
+        width: 300px
+        height: calc(100vh - 100px);
+        padding-top: 100px;
+        color: white;
+        margin-left: -300px;
     }
 
     .Faketrigger {
@@ -39,23 +53,13 @@ export const Nav = styled.div`
         margin-top: 8px;
     }
 
-    .menu-details {
-        position: absolute;
-        z-index: 998;
-        left: 0;
-        top: 0;
-        width: 300px
-        height: calc(100vh - 100px);
-        padding-top: 100px;
-        color: white;
-        margin-left: -300px;
-    }
-
+    
     .Faketrigger:checked~ul {
         margin: 0;
         transition: all ease 0.2;
         height: calc(100vh - 100px);
     }
+
 
     li {
         padding: 10px 5px;
@@ -69,7 +73,7 @@ export const Nav = styled.div`
     }
 
     ul li a:hover {
-        color: red;
+        color: yellow;
     }
 
     .bg {
