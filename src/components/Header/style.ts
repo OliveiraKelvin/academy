@@ -9,17 +9,31 @@ export const Nav = styled.div`
     margin-left: 26px;
     margin-top: 26px;
 
-    h4 {
-        max-height: 30px;
+    .login {
+        padding-top: 7px;
+        width: 120px;
+        max-height: 45px;
         margin-left: 1300px;
         cursor: pointer;
-        color: white;
-    }
-    
-    h4:hover {
-        color: yellow;
+        color: black;
+        font-size: 20px;
+        background-color: yellow;
+        margin-top: 5px;
+        font-weight: bold;
+        border-radius: 20px;
+        text-align: center;
+        text-decoration: none;
+        animation-name: animacao;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;        
     }
 
+    @keyframes animacao {
+        from {background-color: yellow; max-widht: 120px;}
+        to {background-color: green; max-width: 120px;}
+    }
+    
     .menu {
         width: 35px;
         height: 35px;

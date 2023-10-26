@@ -1,3 +1,6 @@
+import { Form } from '../../Pages/Form'
+import { Link } from 'react-router-dom'
+
 import * as C from './style'
 import menu2 from '../../assets/menu2.jpg'
 
@@ -24,10 +27,6 @@ export const Header = () => {
         alert('funcionou')
     }
 
-    const handleLog = () => {
-        alert('Cadastrou!')
-    }
-
     return (
         <C.Container> 
             <C.Nav> <a href='' />
@@ -41,7 +40,8 @@ export const Header = () => {
                     <li><a href="" onClick={handleProf}>PROFISSIONAIS</a></li>
                 </ul>
                 <img src={menu2} alt="" className='menu'/>
-                <h4 onClick={handleLog}>Login | Acessar</h4>  
+
+                <Link to='/login' className='login'>Cadastrar</Link>
             </div>            
             </C.Nav>
         </C.Container>
